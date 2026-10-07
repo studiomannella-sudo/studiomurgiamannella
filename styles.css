@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+:root{--navy:#263d5b;--gold:#a77d3f;--paper:#fbfaf6;--card:#fff;--muted:#66707c;--line:#e3dfd5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:#26313d;font:17px/1.7 "Source Sans 3",Arial,sans-serif}
+h1,h2,h3,.brand{font-family:"Libre Baskerville",Georgia,serif;color:var(--navy);line-height:1.25}a{color:inherit}.top{background:var(--navy);color:white;font-size:14px}.top .wrap{display:flex;justify-content:flex-end;gap:24px;padding:5px 18px}
+.wrap{max-width:1152px;margin:auto;padding-left:18px;padding-right:18px}.header{background:white;border-bottom:1px solid var(--line)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:17px;padding-bottom:17px}.brand{text-decoration:none;font-size:23px}.brand small{display:block;font:12px "Source Sans 3";letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;gap:28px}nav a{text-decoration:none;font-size:15px}nav a:hover{color:var(--gold)}
+.hero{background:#f3f0e7;border-bottom:1px solid var(--line)}.hero .wrap{padding-top:68px;padding-bottom:76px}.eyebrow{text-transform:uppercase;letter-spacing:.2em;color:var(--gold);font-size:14px}
+h1{font-size:46px;max-width:850px;margin:14px 0 0}.lead{max-width:760px;font-size:20px;color:var(--muted)}.rule{width:56px;height:2px;background:var(--gold);margin:24px 0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{padding:11px 22px;border:1px solid var(--navy);border-radius:4px;text-decoration:none;color:var(--navy)}.btn.primary{background:var(--navy);color:white}
+section.content{padding:58px 0}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:42px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);padding:24px;border-radius:4px}.card:hover{border-color:var(--gold)}
+.stat{font:28px "Libre Baskerville";color:var(--navy)}.muted{color:var(--muted)}.divider{border-top:1px solid var(--line)}
+.pagehero{background:#f3f0e7;border-bottom:1px solid var(--line);padding:38px 0}.pagehero h1{font-size:38px}.crumb{font-size:14px;color:var(--muted)}
+.article{max-width:800px;padding-top:45px;padding-bottom:45px}.article h2{margin-top:34px}.cta{background:white;border:1px solid var(--line);padding:28px;margin:20px 0 60px;border-radius:4px}
+footer{background:var(--navy);color:white;margin-top:70px}.foot{display:grid;grid-template-columns:2fr 2fr 1fr;gap:36px;padding:48px 18px}.foot h3{color:white}.foot a{display:block;margin:4px 0}.copy{border-top:1px solid #ffffff33;text-align:center;padding:16px;font-size:13px}
+@media(max-width:800px){.top{display:none}.header .wrap{display:block}.brand{display:block;margin-bottom:14px}nav{gap:14px;flex-wrap:wrap}h1{font-size:35px}.grid2,.cards,.foot{grid-template-columns:1fr}.hero .wrap{padding-top:45px;padding-bottom:50px}}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+:root{--navy:#12243b;--gold:#b28b48;--paper:#f7f5f0;--ink:#1d2730;--muted:#66707a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"Source Sans 3",Arial,sans-serif;font-size:17px;line-height:1.65;background:#fff}
+.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.top{background:var(--navy);color:#e8edf2;font-size:13px}.top .wrap{display:flex;justify-content:space-between;padding:8px 0}.top a{color:inherit;text-decoration:none}
+.nav{min-height:92px;display:flex;align-items:center;justify-content:space-between}.brand{text-decoration:none;color:var(--navy);display:flex;flex-direction:column;letter-spacing:.03em}.brand strong{font-family:"Libre Baskerville",serif;font-size:18px}.brand small{font-size:12px;color:var(--muted);margin-top:2px}.nav nav{display:flex;gap:30px}.nav nav a{color:var(--ink);text-decoration:none;font-size:15px}
+.hero{background:linear-gradient(90deg,rgba(18,36,59,.97),rgba(18,36,59,.90));color:white}.hero-inner{padding:105px 0 115px;max-width:1120px}.eyebrow{font-size:12px;letter-spacing:.2em;color:var(--gold);font-weight:600}.hero h1,.section h2{font-family:"Libre Baskerville",serif;font-weight:400}.hero h1{font-size:clamp(40px,5.5vw,68px);line-height:1.13;max-width:850px;margin:18px 0}.lead{max-width:660px;font-size:21px;color:#e0e5e9}.actions{display:flex;gap:12px;margin-top:32px}.btn{padding:12px 22px;background:var(--gold);color:white;text-decoration:none}.btn.ghost{background:transparent;border:1px solid #c9d0d6}
+.section{padding:82px 0}.section h2{font-size:34px;line-height:1.3;margin:8px 0 24px;color:var(--navy)}.two{display:grid;grid-template-columns:1fr 1.25fr;gap:90px}.alt{background:var(--paper)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:38px}.cards article,.people article{background:white;border-top:2px solid var(--gold);padding:28px;box-shadow:0 5px 22px rgba(20,30,40,.05)}.cards span{color:var(--gold);font-size:13px}.cards h3,.people h3,.news h3{font-family:"Libre Baskerville",serif;color:var(--navy);font-size:21px}.people{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}.news{background:#fbfaf7}.news time{font-size:13px;color:var(--gold)}.contact{background:var(--navy);color:white}.contact h2{color:white}.contact a{color:white}.contact .eyebrow{color:#cba763}footer{background:#0b1828;color:#bfc8d0;padding:24px 0;font-size:13px}
+@media(max-width:760px){.top .wrap{display:block}.nav{align-items:flex-start;padding:20px 0;gap:20px}.nav nav{display:none}.hero-inner{padding:72px 0 80px}.two,.cards,.people{grid-template-columns:1fr;gap:24px}.section{padding:58px 0}.wrap{width:min(100% - 32px,1120px)}}
+
+.cards h3 a,.news h3 a{color:inherit;text-decoration:none}
+.services-full{background:#fff}
+.service-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.service-links a{border:1px solid #ddd8cd;border-left:3px solid var(--gold);padding:18px;color:var(--navy);text-decoration:none;background:#fbfaf7;font-family:"Libre Baskerville",serif}
+@media(max-width:760px){.service-links{grid-template-columns:1fr}}
+
+/* Homepage hero – centro direzionale */
+.hero{
+  position:relative;
+  background:
+    linear-gradient(90deg,rgba(7,24,43,.88) 0%,rgba(10,31,52,.72) 48%,rgba(12,31,48,.32) 100%),
+    url('/assets/centro-direzionale.png') center 42%/cover no-repeat;
+  color:#fff;
+}
+.hero-inner{padding:105px 0 115px}
+.hero .lead{max-width:790px}
+.quick-services{background:#fff;border-bottom:1px solid #e7e7e7}
+.quick-grid{display:grid;grid-template-columns:repeat(5,1fr)}
+.quick-grid a{display:flex;flex-direction:column;min-height:190px;padding:30px 25px;border-right:1px solid #e2e2e2;text-decoration:none;color:var(--ink)}
+.quick-grid a:first-child{border-left:1px solid #e2e2e2}
+.quick-grid b,.quick-grid span{font-family:"Libre Baskerville",serif;color:var(--navy);font-size:20px;line-height:1.25}
+.quick-grid small{font-size:14px;line-height:1.45;color:var(--muted);margin-top:13px}
+@media(max-width:980px){.quick-grid{grid-template-columns:1fr 1fr}.quick-grid a{border-bottom:1px solid #e2e2e2}}
+@media(max-width:760px){.hero{background-position:center}.quick-grid{grid-template-columns:1fr}.quick-grid a{min-height:auto}.actions{flex-wrap:wrap}}
