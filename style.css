@@ -31,3 +31,12 @@
 .quick-grid small{font-size:14px;line-height:1.45;color:var(--muted);margin-top:13px}
 @media(max-width:980px){.quick-grid{grid-template-columns:1fr 1fr}.quick-grid a{border-bottom:1px solid #e2e2e2}}
 @media(max-width:760px){.hero{background-position:center}.quick-grid{grid-template-columns:1fr}.quick-grid a{min-height:auto}.actions{flex-wrap:wrap}}
+
+/* Navigazione accessibile anche su schermi piccoli */
+@media(max-width:760px){
+ .nav{flex-direction:column;align-items:stretch;gap:14px}
+ .nav nav{display:flex;flex-wrap:wrap;gap:4px 16px}
+ .nav nav a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
+ .top a{overflow-wrap:anywhere}
+}
+a:focus-visible{outline:3px solid #b28b48;outline-offset:4px}
