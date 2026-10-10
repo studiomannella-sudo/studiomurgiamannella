@@ -67,6 +67,10 @@
     if (!link) return;
     let url;
     try { url = new URL(link.href); } catch (_) { return; }
+    if (url.protocol === 'tel:' && url.pathname.replace(/[^+\d]/g, '') === '+390706490526') {
+      gtag('event', 'phone_click', {event_category:'contact', event_label:'studio_landline'});
+      return;
+    }
     if (url.protocol !== 'https:' || url.hostname !== 'wa.me' || url.pathname.replace(/\/$/,'') !== '/393498020239') return;
     const sameTab = !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && (!link.target || link.target === '_self');
     let navigated = false;
