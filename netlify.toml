@@ -1,2 +1,4 @@
 [build]
   publish = "."
+
+# Redeploy trigger: ensure all updated SEO pages are included in production build.
