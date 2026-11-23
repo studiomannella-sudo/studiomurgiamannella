@@ -7,6 +7,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <link rel="stylesheet" href="/assets/ads-consent.css">
+<link rel="stylesheet" href="/assets/preventivo-subentro.css">
+<script defer src="/assets/preventivo-subentro.js"></script>
 <script defer src="/assets/ads-consent.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"AccountingService","@id":"https://studiomurgiamannella.it/#studio","name":"Studio Murgia Mannella – Dottori Commercialisti Associati","url":"https://studiomurgiamannella.it/","telephone":"+390706490526","email":"studiomurgiamannella@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Via Palabanda 12","postalCode":"09123","addressLocality":"Cagliari","addressCountry":"IT"},"areaServed":[{"@type":"City","name":"Cagliari"},{"@type":"Country","name":"Italia"}]}</script>
 </head>
@@ -18,8 +20,60 @@
 <p class="eyebrow">STUDIO MURGIA MANNELLA · IN TUTTA ITALIA</p>
 <h1>Contabilità online per SRL, imprese e partite IVA,<br>con un commercialista al tuo fianco.</h1>
 <p class="lead">Per imprese, società e professionisti: gestione contabile e consulenza fiscale a distanza, con un rapporto diretto con i professionisti dello studio.</p>
-<div class="actions"><a class="btn" href="/contatti">Richiedi una consulenza contabile</a><a class="btn ghost" href="https://wa.me/393498020239">Preventivo su WhatsApp</a><a class="btn ghost" href="tel:+390706490526">Parliamone: 070 6490526</a></div>
+<p class="lead">Vuoi cambiare commercialista dal 1° gennaio 2027? Ti aiutiamo a organizzare il passaggio dei documenti e a definire gli adempimenti da gestire.</p>
+<div class="actions subentro-actions">
+  <a class="btn subentro-primary" href="#preventivo-subentro">Richiedi un preventivo per il subentro 2027</a>
+  <a class="btn ghost" href="https://wa.me/393498020239?text=Buongiorno%2C%20vorrei%20un%20preventivo%20per%20il%20subentro%20contabile%20dal%201%C2%B0%20gennaio%202027.%20La%20mia%20attivit%C3%A0%20%C3%A8%3A%20">WhatsApp</a>
+  <a class="btn ghost" href="tel:+390706490526">Chiama lo Studio</a>
+</div>
 </div></section>
+<section class="section alt" id="preventivo-subentro" aria-labelledby="preventivo-titolo">
+  <div class="wrap">
+    <h2 id="preventivo-titolo">Preventivo per il subentro contabile 2027</h2>
+    <p>Indica che attività svolgi e come possiamo ricontattarti. Usa l’ultimo campo per segnalare eventuali scadenze.</p>
+    <form class="subentro-form" name="preventivo-subentro" method="POST" action="/richiesta-subentro-ricevuta.html">
+      <input type="hidden" name="form-name" value="preventivo-subentro">
+      <p hidden><label>Lascia vuoto questo campo <input name="sito-web" tabindex="-1" autocomplete="off"></label></p>
+      <div class="subentro-fields">
+        <label>Tipo di attività
+          <select name="attivita" required>
+            <option value="">Seleziona</option>
+            <option>Società / SRL</option>
+            <option>Impresa individuale</option>
+            <option>Professionista / Partita IVA</option>
+            <option>Altro</option>
+          </select>
+        </label>
+        <label>Servizio richiesto
+          <select name="servizio" required>
+            <option>Subentro contabile dal 1° gennaio 2027</option>
+            <option>Contabilità con altra decorrenza</option>
+            <option>Adempimenti contabili o fiscali specifici</option>
+          </select>
+        </label>
+        <label class="subentro-wide">Email o telefono
+          <input name="recapito" required maxlength="120" placeholder="Inserisci almeno un recapito">
+        </label>
+        <label class="subentro-wide">Scadenze o dettagli utili (facoltativo)
+          <textarea name="dettagli" rows="3" maxlength="600" aria-describedby="preventivo-note"></textarea>
+        </label>
+      </div>
+      <p id="preventivo-note">Per il primo contatto evita credenziali, allegati e dati fiscali riservati.</p>
+      <details class="subentro-privacy">
+        <summary>Come usiamo i dati della richiesta</summary>
+        <p>Il titolare del trattamento è Studio Murgia Mannella – Dottori Commercialisti Associati, Via Palabanda 12, 09123 Cagliari, <a href="mailto:studiomurgiamannella@gmail.com">studiomurgiamannella@gmail.com</a>. Utilizziamo i dati per rispondere alla richiesta e valutare un eventuale incarico su tua iniziativa, ai sensi dell’art. 6, par. 1, lett. b) del GDPR. Il recapito, il tipo di attività e il servizio sono necessari per gestire la richiesta.</p>
+        <p>I dati sono accessibili allo Studio e ai fornitori tecnici che gestiscono il sito, il modulo e la posta. Per il servizio del modulo Netlify pubblica le <a href="https://www.netlify.com/legal/netlify-dpa/">condizioni sul trattamento e sui trasferimenti internazionali</a>. Conserviamo le informazioni per il tempo necessario a gestire la richiesta e, in caso di incarico, per il periodo applicabile al relativo rapporto e agli obblighi di legge.</p>
+        <p>Scrivendo allo Studio puoi chiedere accesso, rettifica, cancellazione, limitazione e, ove applicabile, portabilità dei dati. Puoi presentare un reclamo al <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.</p>
+      </details>
+      <div class="actions subentro-actions">
+        <button class="btn subentro-primary" type="submit">Invia la richiesta</button>
+        <a href="https://wa.me/393498020239?text=Buongiorno%2C%20vorrei%20un%20preventivo%20per%20il%20subentro%20contabile%20dal%201%C2%B0%20gennaio%202027.%20La%20mia%20attivit%C3%A0%20%C3%A8%3A%20">Scrivi su WhatsApp</a>
+      </div>
+      <p class="subentro-error" role="alert" hidden>Non siamo riusciti a confermare l’invio. Riprova oppure contattaci via WhatsApp o <a href="mailto:studiomurgiamannella@gmail.com?subject=Preventivo%20subentro%202027">email</a>.</p>
+    </form>
+  </div>
+</section>
+
 <section class="section wrap">
 <p class="eyebrow">IL SERVIZIO</p><h2>La tua attività, i tuoi adempimenti, un incarico definito insieme</h2>
 <p>Lo Studio Murgia Mannella – Dottori Commercialisti Associati ha sede a Cagliari e assiste anche clienti fuori dalla Sardegna. La collaborazione online permette di organizzare lo scambio dei documenti e il confronto con il professionista senza dover raggiungere la sede per ogni esigenza.</p>

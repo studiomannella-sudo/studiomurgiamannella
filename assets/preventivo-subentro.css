@@ -1,0 +1,67 @@
+.subentro-actions {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.subentro-primary {
+  border: 1px solid var(--navy);
+  background: var(--navy);
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.hero .subentro-primary {
+  border-color: #e7c787;
+  background: #e7c787;
+  color: var(--navy);
+}
+
+.subentro-form {
+  max-width: 46rem;
+}
+
+.subentro-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.subentro-fields label {
+  display: grid;
+  align-content: start;
+  gap: .3rem;
+  font-weight: 600;
+}
+
+.subentro-fields input,
+.subentro-fields select,
+.subentro-fields textarea {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: .6rem .75rem;
+  border: 1px solid #7a858f;
+  border-radius: 4px;
+  background: white;
+  color: var(--ink);
+  font: inherit;
+}
+
+.subentro-wide {
+  grid-column: 1 / -1;
+}
+
+.subentro-privacy summary {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.subentro-error {
+  color: #822215;
+}
+
+@media (max-width: 600px) {
+  .subentro-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
