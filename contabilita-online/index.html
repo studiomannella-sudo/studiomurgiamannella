@@ -31,7 +31,7 @@
   <div class="wrap">
     <h2 id="preventivo-titolo">Preventivo per il subentro contabile 2027</h2>
     <p>Indica che attività svolgi e come possiamo ricontattarti. Usa l’ultimo campo per segnalare eventuali scadenze.</p>
-    <form class="subentro-form" name="preventivo-subentro" method="POST" action="/richiesta-subentro-ricevuta.html">
+    <form class="subentro-form" name="preventivo-subentro" method="POST" action="/richiesta-subentro-ricevuta.html" data-netlify="true" netlify-honeypot="sito-web">
       <input type="hidden" name="form-name" value="preventivo-subentro">
       <p hidden><label>Lascia vuoto questo campo <input name="sito-web" tabindex="-1" autocomplete="off"></label></p>
       <div class="subentro-fields">
@@ -66,9 +66,11 @@
         <p>Scrivendo allo Studio puoi chiedere accesso, rettifica, cancellazione, limitazione e, ove applicabile, portabilità dei dati. Puoi presentare un reclamo al <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.</p>
       </details>
       <div class="actions subentro-actions">
-        <button class="btn subentro-primary" type="submit">Invia la richiesta</button>
+        <button class="btn subentro-primary" type="submit" hidden>Invia la richiesta</button>
+        <a class="btn subentro-primary subentro-email" href="mailto:studiomurgiamannella@gmail.com?subject=Preventivo%20subentro%202027">Prepara l’email</a>
         <a href="https://wa.me/393498020239?text=Buongiorno%2C%20vorrei%20un%20preventivo%20per%20il%20subentro%20contabile%20dal%201%C2%B0%20gennaio%202027.%20La%20mia%20attivit%C3%A0%20%C3%A8%3A%20">Scrivi su WhatsApp</a>
       </div>
+      <p class="subentro-email-note">Il pulsante apre il tuo programma di posta con i dati compilati. Controlla il messaggio e invialo allo Studio.</p>
       <p class="subentro-error" role="alert" hidden>Non siamo riusciti a confermare l’invio. Riprova oppure contattaci via WhatsApp o <a href="mailto:studiomurgiamannella@gmail.com?subject=Preventivo%20subentro%202027">email</a>.</p>
     </form>
   </div>
